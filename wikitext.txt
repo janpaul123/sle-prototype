@@ -1,0 +1,100 @@
+{{Infobox Hurricane
+| Name=Tropical Depression Ten
+| Type=Tropical Depression
+| Year=2005
+| Basin=Atl
+| Image location=Tropical Depression 10 (2005).png
+| Image name=Tropical Depression 10
+| alt=Satellite image of elliptical cloud pattern with no clear center
+| Formed=August 13, 2005
+| Dissipated=August 14, 2005
+| 1-min winds=30
+| Pressure=1008
+| Damages=None
+| Inflated=
+| Fatalities=None reported
+| Areas=None
+| Hurricane season=[[2005 Atlantic hurricane season]]
+}}
+'''Tropical Depression Ten''' was the tenth [[tropical cyclone]] of the record-breaking [[2005 Atlantic hurricane season]]. 
+It formed on August 13 from a [[tropical wave]] that emerged from the west coast of [[Africa]] on August 8. 
+As a result of strong [[wind shear]], the depression remained weak and did not strengthen beyond tropical depression status. 
+The cyclone degenerated on August 14, although its remnants partially contributed to the formation of Tropical Depression Twelve, which eventually intensified into [[Hurricane Katrina]].
+<ref>{{cite web|author=Staff Writer|title=Capt. Julie Reports On Hurricane Katrina|date=June 5, 2007|publisher=''WPTV''|accessdate=2009-06-26|url=http://www.wptv.com/content/chopper5/story/Capt-Julie-Reports-On-Hurricane-Katrina/q__v8S2TZES2GiccRTQ2bw.cspx}}</ref> 
+The cyclone had no effect on land, and did not directly result in any fatalities or damages.
+
+== Meteorological history ==
+{{storm path|10-L 2005 track.png|alt=Track map of tropical depression}}
+On August 8, a [[tropical wave]] emerged from the west coast of [[Africa]] and entered the [[Atlantic Ocean]]. 
+Tracking towards the west, the depression began to exhibit signs of [[convection (meteorology)|convective organization]] on August 11. 
+The system continued to develop, and it is estimated that Tropical Depression Ten formed at 1200 UTC on August 13. 
+At the time, it was located about {{convert|1600|mi|km}} east of [[Barbados]].
+<ref name="TCR"/> 
+Upon its designation, the depression consisted of a large area of thunderstorm activity, with curved [[tropical cyclone#Physical structure|banding features]] and expanding [[outflow (meteorology)|outflow]]. 
+However, the environmental conditions were predicted to quickly become unfavorable.
+<ref>{{cite web|author=Avila|title=Tropical Depression Ten Discussion Number 1|date=August 13, 2005|publisher=National Hurricane Center|accessdate=2009-01-21|url=http://www.nhc.noaa.gov/archive/2005/dis/al102005.discus.001.shtml?}}</ref> 
+The depression moved erratically and slowly towards the west, and [[wind shear]] inhabited any significant intensification. 
+Late on August 13, it was "beginning to look like [[Hurricane Irene (2005)|Irene]]-junior as it undergoes southwesterly mid-level shear beneath the otherwise favorable upper-level outflow pattern".
+<ref name="disc2"/> 
+The wind shear was expected to relent within 48 hours, prompting some forecast models to suggestion the depression would eventually attain hurricane status.
+<ref name="disc2">{{cite web|author=Stewart|title=Tropical Depression Ten Discussion Number 2|date=August 13, 2005|publisher=National Hurricane Center|accessdate=2008-01-21|url=http://www.nhc.noaa.gov/archive/2005/dis/al102005.discus.002.shtml?}}</ref>
+
+By early August 14, the shear had substantially disrupted the storm, leaving the low-level center of circulation exposed from the area of convection, which was also deteriorating. 
+After meandering, the storm began to move westward.
+Forecasters expected it to resume a northwestward track as [[high pressure area|high pressure]] to the south of [[Bermuda]] was forecasted to weaken and another high was predicted to form southwest of the [[Azores]].
+<ref>{{cite web|author=Knabb|title=Tropical Depression Ten Discussion Number 3|date=August 14, 2005|publisher=National Hurricane Center|accessdate=2009-01-21|url=http://www.nhc.noaa.gov/archive/2005/dis/al102005.discus.003.shtml?}}</ref> 
+By 1800 UTC on August 14, the strong shear had further weakened the storm, and it no longer met the criteria for a tropical cyclone. 
+It degenerated into a remnant low, and the National Hurricane Center issued their final advisory on the cyclone. 
+Moving westward, it occasionally produced bursts of convective activity, before dissipating on August 18.
+<ref name="TCR"/>
+
+Tropical Depression Twelve formed over the southeastern [[Bahamas]] at 2100 UTC on August 23, partially from the remains of Tropical Depression Ten.
+<ref>{{cite book|page=61|url=http://books.google.com/?id=-a8DRl1HuwoC&q=%22tropical+depression+ten%22+2005&dq=%22tropical+depression+ten%22+2005|author=United States Senate|title=Hurricane Katrina: a nation still unprepared|publisher=U.S. Government Printing Office|year=2006|isbn=0160767490}}</ref>
+<ref>{{cite web|author=Michael P. Erb|title=A Case Study of Hurricane Katrina: Rapid Intensification in the Gulf of Mexico|year=|publisher=University of North Carolina Asheville|accessdate=2009-06-26|url=http://facstaff.unca.edu/chennon/research/documents/erb_ncur2006_preprint.pdf|format=PDF}}</ref> 
+While the normal standards for numbering tropical depressions in the [[Atlantic Ocean|Atlantic]] stipulate that the initial designation be retained when a depression regenerates, satellite imagery indicated that a second [[tropical wave]] had combined with Tropical Depression Ten north of [[Puerto Rico]] to form a new, more complex weather system, which was then designated as Tropical Depression Twelve.
+<ref>{{cite web | author = Stewart, Stacy | publisher = [[National Hurricane Center]] | url = http://www.nhc.noaa.gov/archive/2005/dis/al122005.discus.001.shtml | title = Tropical Depression Twelve Discussion Number 1 | date=August 23, 2005 | accessdate = 2009-01-21}}</ref> 
+In a re-analysis, it was found that the low-level circulation of Tropical Depression Ten had completely detached and dissipated; only the remnant mid-level circulation moved on and merged with the second tropical wave. 
+As a result, the criteria for keeping the same name and identity were not met. 
+Tropical Depression Twelve later became [[Hurricane Katrina]].
+<ref name="KatrinaTCR"/>
+[[File:TD 10 August 13, 2005.jpg|right|thumb|Tropical Depression Ten on August 13|alt=Satellite image of elliptical cloud pattern with no clear center]]
+
+== Impact ==
+Because Tropical Depression Ten never approached land as a [[tropical cyclone]], no [[tropical cyclone watches and warnings]] were issued for any land masses. 
+No effects, damages, or fatalities were reported, and no ships reported tropical storm-force winds in association with the depression. 
+The system did not attain tropical storm status; as such, it was not designated a name by the [[National Hurricane Center]].
+<ref name="TCR">{{cite web|author=Jack Beven|title=Tropical Depression Ten Tropical Cyclone Report|date=January 17, 2006|publisher=National Hurricane Center|accessdate=2009-01-21|url=http://www.nhc.noaa.gov/pdf/TCR-AL102005_Ten.pdf|format=PDF}}</ref> 
+The storm partially contributed to the formation of Hurricane Katrina, which would later become a [[List of Category 5 Atlantic hurricanes|Category 5]] hurricane on the [[Saffir-Simpson Hurricane Scale]] and make landfall in [[Louisiana]], causing catastrophic damage. 
+Katrina was the costliest [[Atlantic hurricane|hurricane]], as well as one of the five deadliest, in the history of the [[United States]].
+<ref name="KatrinaTCR">
+{{cite web|last=Knabb|first=Richard D|coauthors=Rhome, Jamie R.; Brown, Daniel P|url=http://www.nhc.noaa.gov/pdf/TCR-AL122005_Katrina.pdf|format=PDF|title=Tropical Cyclone Report: Hurricane Katrina: 23–30 August 2005|publisher=National Hurricane Center|date=December 20, 2005; updated August 10, 2006|accessdate=2009-01-21}}</ref>
+
+== See also ==
+{{Portal|Tropical cyclones}}
+* [[Meteorological history of Hurricane Katrina]]
+* [[List of storms in the 2005 Atlantic hurricane season]]
+* [[Timeline of the 2005 Atlantic hurricane season]]
+
+== References ==
+{{Reflist|2}}
+
+== External links ==
+* [http://www.nhc.noaa.gov/pdf/TCR-AL102005_Ten.pdf Tropical Depression Ten Tropical Cyclone Report]
+* [http://www.nhc.noaa.gov/archive/2005/TEN.shtml? Tropical Depression Ten advisory archive]
+
+{{2005 Atlantic hurricane season buttons}}
+{{Featured article}}
+
+{{DEFAULTSORT:10}}
+
+[[Category:2005 Atlantic hurricane season]]
+[[Category:Atlantic tropical depressions]]
+[[Category:Hurricane Katrina]]
+
+{{Link FA|ca}}
+{{Link GA|es}}
+
+[[ca:Depressió tropical Ten (2005)]]
+[[es:Depresión tropical Diez (2005)]]
+[[eu:Hamargarren depresio tropikala (2005)]]
+[[simple:Tropical Depression Ten (2005)]]

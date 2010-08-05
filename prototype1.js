@@ -21,7 +21,7 @@ var slClick = function(event) {
 	var width = span.textWidth();
 	
 	// store the original span in a hidden field
-	var elOrig = $j('<span class="orig"/>');
+	var elOrig = $j('<span class="orig"></span>');
 	elOrig.attr('title', wiki);
 	elOrig.html(span.html());
 	
@@ -36,13 +36,13 @@ var slClick = function(event) {
 	elCancel.click(slCancel);
 	
 	// build the edit bar from the input field and buttons
-	var elEditbar = $j('<span class="editbar" style="width: ' + width + 'px">');
+	var elEditbar = $j('<span class="editbar" style="width: ' + width + 'px"></span>');
 	elEditbar.append(elInput);
 	elEditbar.append(elSave);
 	elEditbar.append(elCancel);
 		
 	// create a new span and add the original text and the edit bar
-	var newSpan = $j('<span class="sentence editing"/>');
+	var newSpan = $j('<span class="sentence editing"></span>');
 	newSpan.append(elOrig);
 	newSpan.append(elEditbar);
 	

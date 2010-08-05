@@ -1,9 +1,18 @@
 $j.fn.textWidth = function(){
-	var html_org = $j(this).html();
-	var html_calc = $j('<div style="width: 100%"><span>' + html_org + '</span></div>');
-	$j(this).html(html_calc);
-	var width = $j(this).find('span:first').width();
-	$j(this).html(html_org);
+	var element = $j(this);
+	var outer = $j('<div style="width: 100%"></div>');
+	var inner = $j('<span></span>');
+	inner.html(element.html());
+	outer.append(inner);
+	
+	element.after(outer);
+	element.hide();
+	
+	var width = inner.width();
+	
+	outer.remove();
+	element.show();
+	
 	return width;
 };
 
@@ -18,7 +27,7 @@ var slClick = function(event) {
 	
 	// calculate width based on the text width witin the page flow
 	// this means that this width will never exeed the original width when it's a multiline sentence
-	var width = span.textWidth();
+	var width = span.textWidth() - 5;
 	
 	// store the original span in a hidden field
 	var elOrig = $j('<span class="orig"></span>');

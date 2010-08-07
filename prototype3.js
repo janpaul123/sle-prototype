@@ -156,5 +156,4 @@ $j(document).ready(function() {
 	$j('.sentence').click(slClick);
 	$j('.optionMode').change(slEditMode);
 	slEditMode();
-	$j('.summary').focus();
 });

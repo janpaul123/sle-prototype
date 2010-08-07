@@ -72,6 +72,9 @@ slClick = function(event) {
 	// editing the current span is buggy in Webkit browsers
 	span.after(newSpan);
 	span.remove();
+	
+	// focus on the input so you can start typing immediately
+	elInput.focus();
 };
 
 slCancel = function(event) {

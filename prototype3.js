@@ -32,7 +32,9 @@ $j.fn.textWidth = function(){
 };
 
 slClick = function(event) {
-	if (!$j('#content').hasClass('modeText')) return;
+	if (!$j('#content').hasClass('modeText')) {
+		return;
+	}
 	
 	// prevent clicks from reaching other elements
 	event.stopPropagation();
@@ -79,6 +81,9 @@ slClick = function(event) {
 	
 	// add a resizable handle to the bottom, and set a minimum height of 40px
 	elInput.resizable({handles: 's', minHeight: 40});
+	
+	// focus on the input so you can start typing immediately
+	elInput.focus();
 };
 
 slCancel = function(event) {
@@ -135,15 +140,17 @@ slEditMode = function(event) {
 	var options = ['Text', 'References', 'Images', 'Templates', 'FullEditor'];
 	
 	for (var optionNr in options) {
-		var option = options[optionNr];
-		
-		if($j('#edit' + option).attr('checked')) {
-			$j('#description' + option).show();
-			$j('#content').addClass('mode' + option);
-			return;
+		if (options[optionNr]) {
+			var option = options[optionNr];
+			
+			if($j('#edit' + option).attr('checked')) {
+				$j('#description' + option).show();
+				$j('#content').addClass('mode' + option);
+				return;
+			}
 		}
 	}
-}
+};
 
 $j(document).ready(function() {
 	$j('.sentence').click(slClick);

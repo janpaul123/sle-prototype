@@ -76,6 +76,9 @@ slClick = function(event) {
 	
 	// add a resizable handle to the bottom, and set a minimum height of 40px
 	elInput.resizable({handles: 's', minHeight: 40});
+	
+	// focus on the input so you can start typing immediately
+	elInput.focus();
 };
 
 slCancel = function(event) {

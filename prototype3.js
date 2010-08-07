@@ -126,6 +126,7 @@ slPreview = function(event) {
 	var overlay = $j('<div class="overlay"><div class="alpha"></div><img class="spinner" src="ajax-loader.gif"/></div>');
 	editbar.append(overlay);
 	
+	// mark the original text as being changed, this will give a colored highlight
 	editbar.parent().children('.orig').addClass('editedHighlight');
 	
 	// fake the retrieval of data
@@ -133,16 +134,23 @@ slPreview = function(event) {
 };
 
 slEditMode = function(event) {
+	// first of all, hide all descriptions, remove the edit mode from #content,
+	// and cancel all sentences that are being edited
 	$j('.editmode .descriptionInner').hide();
 	$j('#content').removeClass();
 	$j('.editing').find('.cancel').click();
 	
+	// possible options in the menu
 	var options = ['Text', 'References', 'Images', 'Templates', 'FullEditor'];
 	
+	// check for all options if they are selected
 	for (var optionNr in options) {
 		if (options[optionNr]) {
 			var option = options[optionNr];
 			
+			// if a certain option is selected, show the description
+			// and set the edit mode in #content, then exit this function as only
+			// one mode can be selected
 			if($j('#edit' + option).attr('checked')) {
 				$j('#description' + option).show();
 				$j('#content').addClass('mode' + option);
@@ -153,7 +161,12 @@ slEditMode = function(event) {
 };
 
 $j(document).ready(function() {
+	// make all sentences clickable
 	$j('.sentence').click(slClick);
+	
+	// make the edit mode radiobuttons clickable
 	$j('.optionMode').change(slEditMode);
+	
+	// check the current selected edit mode
 	slEditMode();
 });

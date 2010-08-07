@@ -17,6 +17,7 @@
 }
 
 .modeReferences .reference {
+	/* highlight references the same way, and add a lot of padding to make them stand out */
 	background-color: #E4F0F9;
 	padding: 0.5em;
 }
@@ -30,10 +31,12 @@
 }
 
 .modeImages .thumbinner {
+	/* same color for images */
 	background-color: #E4F0F9;
 }
 
 .modeImages .thumbinner:hover {
+	/* same color for images */
 	background-color: #a7d7f9;
 	
 	/* create a hand cursor, cross-browser hack: http://www.quirksmode.org/css/cursor.html */
@@ -42,15 +45,18 @@
 }
 
 .modeTemplates .template {
+	/* same color for templates, make sure this color is actually used instead of element style */
 	background-color: #E4F0F9 !important;
 	padding: 0.5em;
 }
 
 .modeTemplates .template * {
+	/* make sure all the child elements inherit the background color */
 	background-color: inherit !important;
 }
 
 .modeTemplates .template:hover {
+	/* same mouseover color, the children inherit this color */
 	background-color: #a7d7f9 !important;
 	
 	/* create a hand cursor, cross-browser hack: http://www.quirksmode.org/css/cursor.html */
@@ -59,6 +65,7 @@
 }
 
 .modeText .editedHighlight {
+	/* have a yellow color to highlight edited text, basically the orange color with the hue shifted */
 	background-color: #F9F2A7;
 }
 
@@ -211,6 +218,7 @@
 }
 
 .editmode {
+	/* style the mode selection box essentially in the same way as the box above */
 	border: 1px solid #A7D7F9;
 	padding: 0px;
 	max-width: 720px;
@@ -218,31 +226,46 @@
 }
 
 .editmode .header {
+	/* only the header has a grey background color */
 	background-color: #eee;
 	margin: 0px;
 	padding: 0px;
+	
+	/* make sure the header resizes due to the floated elements */
 	overflow: auto;
+	
+	/* make the bottom borders of the buttons collapse */
 	margin-bottom: -1px;
 }
 
 .editmode .header .radio {
+	/* margin fix for old IE versions, see http://www.positioniseverything.net/explorer/doubled-margin.html */
 	display: inline;
 	float: left;
+	
+	/* have the borders here, not in the header div, to make sure it looks good on smaller displays! */
+	border-top: 1px solid #A7D7F9;
 	border-right: 1px solid #A7D7F9;
 	border-bottom: 1px solid #A7D7F9;
 	padding: 2px 6px;
+	
+	/* collapse the top border */
+	margin-top: -1px;
 }
 
 .editmode .header .radio input {
+	/* use only the padding of .radio div, and the label margin */
 	margin: 0px;
 }
 
 .editmode .header .title {
+	/* bold title on the left side of the header */
 	font-size: 0.9em;
 	font-weight: bold;
 }
 
 .editmode .header .radio label {
+	/* only have a small margin on the left side */
 	font-size: 0.9em;
 	margin: 0px 0px 0px 5px;
 	
@@ -252,21 +275,21 @@
 }
 
 .editmode .header .radio label:hover {
+	/* make the labels recognizable as clickable */
 	text-decoration: underline;
 }
 
 .editmode .descriptionOuter {
+	/* have a top border which collapses with the label borders */
 	border-top: 1px solid #A7D7F9;
+	
+	/* use padding and margin only in the inner div */
 	padding: 0px;
 	margin: 0px;
-	position: relative;
-	overflow: auto;
 }
 
 .editmode .descriptionInner {
+	/* have the same padding as the box above */
 	padding: 10px 10px 5px;
 	margin: 0px;
-	/*position: absolute;
-	left: 0px;
-	top: 0px;*/
 }

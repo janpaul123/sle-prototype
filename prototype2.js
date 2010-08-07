@@ -127,4 +127,5 @@ slPreview = function(event) {
 
 $j(document).ready(function() {
 	$j('.sentence').click(slClick);
+	$j('.summary').focus();
 });

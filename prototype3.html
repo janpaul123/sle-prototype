@@ -104,6 +104,9 @@ wgNoticeLocal="";
 			
 			<div class="editbox">
 				<strong>Awesome, you're editing Wikipedia!</strong><br/>
+				You can edit the article below, or go to the <a href="#">full editor</a>, which is more powerful but also more complex.
+				<hr/>
+				
 				Can you briefly describe the changes you made?
 				<input type="text" class="summary"/>
 				
@@ -119,10 +122,12 @@ wgNoticeLocal="";
 			
 			<div class="editmode">
 				<div class="header">
-					<div class="radio"><input type="radio" name="editmode" id="editText" class="optionMode"/><label for="editText">Text</label></div>
+					<div class="radio title">Edit mode:</div>
+					<div class="radio"><input type="radio" name="editmode" id="editText" class="optionMode" checked="checked"/><label for="editText">Text</label></div>
 					<div class="radio"><input type="radio" name="editmode" id="editReferences" class="optionMode"/><label for="editReferences">References</label></div>
 					<div class="radio"><input type="radio" name="editmode" id="editImages" class="optionMode"/><label for="editImages">Images</label></div>
 					<div class="radio"><input type="radio" name="editmode" id="editTemplates" class="optionMode"/><label for="editTemplates">Templates</label></div>
+					<div class="radio"><input type="radio" name="editmode" id="editFullEditor" class="optionMode"/><label for="editFullEditor">Full editor</label></div>
 				</div>
 				<div class="descriptionOuter">
 					<div class="descriptionInner" id="descriptionText">
@@ -141,6 +146,16 @@ wgNoticeLocal="";
 						An article looks much better by having a few <a href="http://en.wikipedia.org/wiki/Wikipedia:Images" target="_blank">images</a>.
 					</div>
 					<div class="descriptionInner" id="descriptionTemplates">
+						A template is a page created explicitly for <a href="http://en.wikipedia.org/wiki/Wikipedia:Transclusion" target="_blank">transclusion</a> – the process of including the contents of one page within another page.
+						Any page can be transcluded, but templates are designed specifically for that purpose, usually for repetitive material that might need to show up on any number of articles or pages.
+						They are commonly used for <a href="http://en.wikipedia.org/wiki/Wikipedia:Glossary#Boilerplate_text" target="_blank">boilerplate</a> messages, standard warnings or notices, <a href="http://en.wikipedia.org/wiki/Help:Infobox" target="_blank">infoboxes</a>, <a href="http://en.wikipedia.org/wiki/Wikipedia:Navbox" target="_blank">navigational boxes</a> and similar.
+					</div>
+					<div class="descriptionInner" id="descriptionFullEditor">
+						If you want full control over the page, you can use the full editor.
+						With this editor you can edit the <a href="http://en.wikipedia.org/wiki/Help:Wiki_markup" target="_blank">Wiki markup</a> directly.
+						The editor is also more complex to use, but to have full control of editing Wikipedia, that's worth it!
+						<br/>
+						<a href="#">Use the full editor &raquo;</a>
 					</div>
 				</div>
 			</div>

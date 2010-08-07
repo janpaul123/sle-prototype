@@ -101,8 +101,8 @@ slCancel = function(event) {
 	
 	// highlight the text orange and have it fade to blue again
 	// this is a visual indicator to where the sentence is now
-	orig.addClass('orange');
-	orig.removeClass('orange', 'slow');
+	orig.addClass('fadeHighlight');
+	orig.removeClass('fadeHighlight', 'slow');
 };
 
 slPreview = function(event) {

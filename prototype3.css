@@ -58,7 +58,11 @@
 	cursor: hand;
 }
 
-.orange {
+.modeText .editedHighlight {
+	background-color: #F9F2A7;
+}
+
+.modeText .fadeHighlight {
 	/* have an orange color, the exact complement of the hover color, for highlighting on preview/cancel */
 	background-color: #f9c9a7;
 }
@@ -196,7 +200,6 @@
 	font-size: 1.5em;
 	padding: 8px 16px 6px;
 	line-height: 1em;
-	text-decoration: underline;
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
@@ -205,10 +208,6 @@
 	border-radius: 10px;
 	-moz-border-radius: 10px; 
 	-webkit-border-radius: 10px;
-}
-
-.editbox a.publish:hover {
-	text-decoration: none;
 }
 
 .editmode {
@@ -238,9 +237,22 @@
 	margin: 0px;
 }
 
+.editmode .header .title {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
 .editmode .header .radio label {
 	font-size: 0.9em;
 	margin: 0px 0px 0px 5px;
+	
+	/* create a hand cursor, cross-browser hack: http://www.quirksmode.org/css/cursor.html */
+	cursor: pointer;
+	cursor: hand;
+}
+
+.editmode .header .radio label:hover {
+	text-decoration: underline;
 }
 
 .editmode .descriptionOuter {
@@ -252,7 +264,7 @@
 }
 
 .editmode .descriptionInner {
-	padding: 5px;
+	padding: 10px 10px 5px;
 	margin: 0px;
 	/*position: absolute;
 	left: 0px;

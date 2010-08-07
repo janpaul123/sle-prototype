@@ -32,6 +32,8 @@ $j.fn.textWidth = function(){
 };
 
 slClick = function(event) {
+	if (!$j('#content').hasClass('modeText')) return;
+	
 	// prevent clicks from reaching other elements
 	event.stopPropagation();
 	event.preventDefault();
@@ -102,8 +104,8 @@ slCancel = function(event) {
 	
 	// highlight the text orange and have it fade to blue again
 	// this is a visual indicator to where the sentence is now
-	orig.addClass('orange');
-	orig.removeClass('orange', 'slow');
+	orig.addClass('fadeHighlight');
+	orig.removeClass('fadeHighlight', 'slow');
 };
 
 slPreview = function(event) {
@@ -119,6 +121,8 @@ slPreview = function(event) {
 	var overlay = $j('<div class="overlay"><div class="alpha"></div><img class="spinner" src="ajax-loader.gif"/></div>');
 	editbar.append(overlay);
 	
+	editbar.parent().children('.orig').addClass('editedHighlight');
+	
 	// fake the retrieval of data
 	setTimeout(function() { editbar.children('.cancel').click(); }, 300 + 1000 * Math.random() );
 };
@@ -128,24 +132,16 @@ slEditMode = function(event) {
 	$j('#content').removeClass();
 	$j('.editing').find('.cancel').click();
 	
-	if($j('#editText').attr('checked')) {
-		$j('#descriptionText').show();
-		$j('#content').addClass('modeText');
-	}
+	var options = ['Text', 'References', 'Images', 'Templates', 'FullEditor'];
 	
-	if($j('#editReferences').attr('checked')) {
-		$j('#descriptionReferences').show();
-		$j('#content').addClass('modeReferences');
-	}
-	
-	if($j('#editImages').attr('checked')) {
-		$j('#descriptionImages').show();
-		$j('#content').addClass('modeImages');
-	}
-	
-	if($j('#editTemplates').attr('checked')) {
-		$j('#descriptionTemplates').show();
-		$j('#content').addClass('modeTemplates');
+	for (var optionNr in options) {
+		var option = options[optionNr];
+		
+		if($j('#edit' + option).attr('checked')) {
+			$j('#description' + option).show();
+			$j('#content').addClass('mode' + option);
+			return;
+		}
 	}
 }
 

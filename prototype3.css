@@ -1,0 +1,260 @@
+.modeText .sentence {
+	/* soft-blue background color to highlight editable sentences */
+	background-color: #E4F0F9;
+	
+	/* create a hand cursor, cross-browser hack: http://www.quirksmode.org/css/cursor.html */
+	cursor: pointer;
+	cursor: hand;
+	
+	/* have the background color extend just a bit around the text border, looks better */
+	margin: -1px;
+	padding: 1px;
+}
+
+.modeText .sentence:hover {
+	/* indicate the sentence to be edited with a darker color */
+	background-color: #a7d7f9;
+}
+
+.modeReferences .reference {
+	background-color: #E4F0F9;
+	padding: 0.5em;
+}
+
+.modeReferences .reference:hover {
+	background-color: #a7d7f9;
+	
+	/* create a hand cursor, cross-browser hack: http://www.quirksmode.org/css/cursor.html */
+	cursor: pointer;
+	cursor: hand;
+}
+
+.modeImages .thumbinner {
+	background-color: #E4F0F9;
+}
+
+.modeImages .thumbinner:hover {
+	background-color: #a7d7f9;
+	
+	/* create a hand cursor, cross-browser hack: http://www.quirksmode.org/css/cursor.html */
+	cursor: pointer;
+	cursor: hand;
+}
+
+.modeTemplates .template {
+	background-color: #E4F0F9 !important;
+	padding: 0.5em;
+}
+
+.modeTemplates .template * {
+	background-color: inherit !important;
+}
+
+.modeTemplates .template:hover {
+	background-color: #a7d7f9 !important;
+	
+	/* create a hand cursor, cross-browser hack: http://www.quirksmode.org/css/cursor.html */
+	cursor: pointer;
+	cursor: hand;
+}
+
+.orange {
+	/* have an orange color, the exact complement of the hover color, for highlighting on preview/cancel */
+	background-color: #f9c9a7;
+}
+
+.editing {
+	/* keeping the custom padding and margin breaks in Webkit browsers */
+	padding: 0px;
+	margin: 0px;
+	
+	/* reset the cursor when editing */
+	cursor: auto;
+}
+
+.sentence .orig {
+	/* hide the original sentence */
+	display: none;
+}
+
+.sentence .editbar {
+	/* use an inline-block to support no-wrap and width; this makes sure everything is on one line
+	   the inline-block is cross-browser supported because a span is inline by default, 
+	   see http://www.quirksmode.org/css/display.html */ 
+	display: inline-block;
+	white-space: no-wrap;
+	
+	/* this is used for vertical alignment */
+	position: relative;
+	vertical-align: middle;
+	
+	margin: 2px;
+}
+
+.sentence .editbar input {
+	/* vertically align the inputs */
+	position: absolute;
+	top: 50%;
+	height: 22px;
+	margin-top: -11px;
+}
+
+.sentence .editbar textarea {
+	/* style the textarea font, as this differs heavily from browser to browser */
+	font-family: sans-serif;
+	font-size: 1.0em;
+	line-height: 1.3em;
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+}
+
+.sentence .editbar .ui-resizable-s {
+	/* correctly position the resize handle */
+	bottom: 0px;
+	background-color: #ddd;
+}
+
+.saving .editbar .ui-resizable-s {
+	/* remove the color of the resize handle when saving as this looks strange */
+	background-color: transparent;
+}
+
+.sentence .editbar .overlay {
+	/* position the overly to cover the entire editbar */
+	height: 100%;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+.sentence .editbar .overlay img.spinner {
+	/* position the spinner exactly in the middle */
+	left: 50%;
+	margin-left: -8px;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+	width: 16px;
+	height: 16px;
+}
+
+.sentence .editbar .overlay .alpha {
+	/* have a cross-browser alpha overlay, see http://www.quirksmode.org/css/opacity.html */
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: 0.7;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+}
+
+.link {
+	/* fake links using a custom class, to make sure the page looks the same as in view mode */
+	color: #0645AD;
+}
+
+.editbox {
+	/* box on top of the page, colors are the same as the surrounding colors */
+	/* it scales with the display size */
+	font-size: 1.0em;
+	background-color: #eee;
+	border: 1px solid #A7D7F9;
+	margin-bottom: 10px;
+	padding: 10px 10px 5px;
+	max-width: 700px;
+	position: relative;
+}
+
+.editbox input.summary {
+	/* summary box, scales with the editbox to a certain point */
+	display: block;
+	width: 500px;
+	max-width: 98%;
+	padding: 2px;
+	margin: 2px 0px;
+	font-size: 0.8em;
+}
+
+.editbox .example, .editbox .terms {
+	/* smaller font and lighter color for less important items */
+	font-size: 0.8em;
+	color: #555;
+}
+
+.editbox .side {
+	/* text besides the publish button */
+	margin-right: 150px;
+}
+
+.editbox a.publish {
+	/* style the publish button to be eye-catching using a bright green color */
+	background-color: #008C00;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 8px 16px 6px;
+	line-height: 1em;
+	text-decoration: underline;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	border: 1px solid green;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+}
+
+.editbox a.publish:hover {
+	text-decoration: none;
+}
+
+.editmode {
+	border: 1px solid #A7D7F9;
+	padding: 0px;
+	max-width: 720px;
+	margin-bottom: 10px;
+}
+
+.editmode .header {
+	background-color: #eee;
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+	margin-bottom: -1px;
+}
+
+.editmode .header .radio {
+	display: inline;
+	float: left;
+	border-right: 1px solid #A7D7F9;
+	border-bottom: 1px solid #A7D7F9;
+	padding: 2px 6px;
+}
+
+.editmode .header .radio input {
+	margin: 0px;
+}
+
+.editmode .header .radio label {
+	font-size: 0.9em;
+	margin: 0px 0px 0px 5px;
+}
+
+.editmode .descriptionOuter {
+	border-top: 1px solid #A7D7F9;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	overflow: auto;
+}
+
+.editmode .descriptionInner {
+	padding: 5px;
+	margin: 0px;
+	/*position: absolute;
+	left: 0px;
+	top: 0px;*/
+}

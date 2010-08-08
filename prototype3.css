@@ -118,17 +118,9 @@
 	margin: 0px;
 	padding: 0px;
 	height: 50px;
-}
-
-.sentence .editbar .ui-resizable-s {
-	/* correctly position the resize handle */
-	bottom: 0px;
-	background-color: #ddd;
-}
-
-.saving .editbar .ui-resizable-s {
-	/* remove the color of the resize handle when saving as this looks strange */
-	background-color: transparent;
+	
+	/* disable resizing for browsers like Chrome, as we do this ourselves */
+	resize: none;
 }
 
 .sentence .editbar .overlay {
@@ -171,12 +163,17 @@
 	/* box on top of the page, colors are the same as the surrounding colors */
 	/* it scales with the display size */
 	font-size: 1.0em;
-	background-color: #eee;
+	background-color: #eaf3f8;
 	border: 1px solid #A7D7F9;
 	margin-bottom: 10px;
 	padding: 10px 10px 5px;
 	max-width: 700px;
 	position: relative;
+}
+
+.editbox .highlightExample {
+	background-color: #a7d7f9;
+	padding: 1px 3px;
 }
 
 .editbox input.summary {
@@ -226,8 +223,8 @@
 }
 
 .editmode .header {
-	/* only the header has a grey background color */
-	background-color: #eee;
+	/* only the header has a blue background color */
+	background-color: #eaf3f8;
 	margin: 0px;
 	padding: 0px;
 	
@@ -292,4 +289,5 @@
 	/* have the same padding as the box above */
 	padding: 10px 10px 5px;
 	margin: 0px;
+	background-color: #f8f8f8;
 }

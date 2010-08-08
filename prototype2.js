@@ -53,8 +53,8 @@ slClick = function(event) {
 	elInput.text(wiki);
 	
 	// build preview and cancel buttons and add click events
-	var elPreview = $j('<input type="button" value="Preview" style="width: 60px; margin-left: ' + (width-60-60-3) + 'px;" class="preview"/>');
-	var elCancel = $j('<input type="button" value="Cancel" style="width: 60px; margin-left: ' + (width-60-1) + 'px;" class="cancel"/>');
+	var elPreview = $j('<input type="button" value="Preview" style="width: 60px; margin-left: ' + (3) + 'px;" class="preview"/>');
+	var elCancel = $j('<input type="button" value="Cancel" style="width: 60px; margin-left: ' + (60+3+3) + 'px;" class="cancel"/>');
 	elPreview.click(slPreview);
 	elCancel.click(slCancel);
 	
@@ -74,8 +74,8 @@ slClick = function(event) {
 	span.after(newSpan);
 	span.remove();
 	
-	// add a resizable handle to the bottom, and set a minimum height of 40px
-	elInput.resizable({handles: 's', minHeight: 40});
+	// automatically resize the textarea using the Elastic plugin
+	elInput.elastic();
 	
 	// focus on the input so you can start typing immediately
 	elInput.focus();

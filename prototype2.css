@@ -151,6 +151,7 @@
 	right: 10px;
 	border: 1px solid green;
 	
+	/* cross (modern) browser rounded corners */
 	border-radius: 10px;
 	-moz-border-radius: 10px; 
 	-webkit-border-radius: 10px;
